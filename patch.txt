@@ -1,0 +1,18 @@
+Trackmania.exe.text+A3830C - 33 D2                 - xor edx,edx
+Trackmania.exe.text+A3830E - 33 C9                 - xor ecx,ecx
+Trackmania.exe.text+A38310 - E8 AB70E4FF           - call Trackmania.exe.text+87F3C0 -- call to SleepExLong
+Trackmania.exe.text+A38315 - 8B 95 60020000        - mov edx,[rbp+00000260]
+Trackmania.exe.text+A3831B - 48 8D 8D 50020000     - lea rcx,[rbp+00000250]
+Trackmania.exe.text+A38322 - E8 49ED6CFF           - call Trackmania.exe.text+107070
+Trackmania.exe.text+A38327 - E8 F4EF6CFF           - call Trackmania.exe.text+107320
+Trackmania.exe.text+A3832C - 44 39 35 511F5E01     - cmp [Trackmania.exe+201B284],r14d { (0) }
+Trackmania.exe.text+A38333 - 0F84 8EFDFFFF         - je Trackmania.exe.text+A380C7
+Trackmania.exe.text+A38339 - EB 17                 - jmp Trackmania.exe.text+A38352
+
+33 D2 33 C9 E8 AB 70 E4 FF 8B 95 60 02 00 00 48 8D 8D 50 02 00 00 E8 49 ED 6C FF E8 F4 EF 6C FF 44 39 35 51 1F 5E 01 0F 84 8E FD FF FF EB 17
+
+
+E8 AB 70 E4 FF 8B 95 60 02 00 00 48 8D 8D 50 02 00 00
+E8 ?? ?? ?? ?? 8B 95 ?? 02 00 00 48 8D 8D ?? 02 00 00
+33 C9 E8 ?? ?? ?? ?? 8B 95 ?? 02 00 00 48 8D 8D ?? 02 00 00
+# unique
